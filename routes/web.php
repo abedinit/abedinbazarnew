@@ -55,7 +55,7 @@ Route::post('/autosearch', 'SearchController@autosearch');
 
 
 
-Route::any('/search',function(){
+Route::post('/search',function(){
     $q = Input::get ( 'q' );
     $orders = customer_info::where('number','LIKE','%'.$q.'%')->orWhere('address','LIKE','%'.$q.'%')->get();
     if(count($orders) > 0)

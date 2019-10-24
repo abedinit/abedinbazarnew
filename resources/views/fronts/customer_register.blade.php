@@ -16,12 +16,15 @@
                    <div id="user_from">
  
                    
-                   <form >
+                   <form action="{{ url('/customerSaveForm') }}" method="POST" >
+                    @csrf
                          <div class="form-group">
-                           <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Type Your Name">
+                          <input type="text" class="form-control" name="name" placeholder="Type Your Name">
                          </div>
                          <div class="form-group">
-                           <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Type your Phone Number">
+                          <input type="text" name="number" class="form-control" placeholder="Type Your Number *" value="" />
+                          <input type="hidden" name="email" class="form-control" placeholder="Type Your Address *" />
+                          <input type="hidden" name="password" class="form-control" placeholder="Type Your Address *" />
                          </div>
                          <div class="form-group">
                                <select class="custom-select">
@@ -31,7 +34,7 @@
                                    </select>
                          </div>
                          <div class="form-group">
-                           <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Type your Address">
+                          <input type="text" name="address" class="form-control" placeholder="Type Your Address *" value="" />
                          </div>
                          
                          <button type="submit" class="btn btn-block btn-small" style="background: #FF8E27;

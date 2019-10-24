@@ -17,7 +17,7 @@
       @csrf
         <div class="form-group">
           <label for="exampleInputCates">Logo</label>
-          <input type="file" name="image" class="form-control">
+          <input type="file" name="image" class="form-control" required>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>

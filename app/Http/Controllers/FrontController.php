@@ -210,7 +210,8 @@ function categoryViewProduct($id)
         ]);
 
 
-       return redirect()->route('shiping');
+       return redirect()->route('customer-dashboard
+       ');
     }
 
     // public function Complaint(){
