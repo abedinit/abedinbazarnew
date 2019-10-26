@@ -192,57 +192,40 @@
 
 
                     <div id="popular_search">
-                    <nav class="navbar navbar-expand-md navbar-light padding_0">
-                      
-                    <a class="navbar-brand" href="#">জনপ্রিয় অনুসন্ধান</a>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="#">Disabled</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="#">Disabled</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="#">Disabled</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="#">Disabled</a>
-                            </li>
-                            <li class="nav-item" style="border:none;">
-                                <a class="nav-link" href="#">Features</a>
-                            </li>
-                       
-                            </ul>
+                        <div class="input-group" id="adv-search">
+                            <input type="text" class="form-control" placeholder="Search by Filter" />
+                            <div class="input-group-btn">
+                                <div class="btn-group" role="group">
+                                    <div class="dropdown dropdown-lg">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                                        <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                            <form class="form-horizontal" role="form">
+                                              <div class="form-group">
+                                                <label for="filter">Filter by</label>
+                                                <select class="form-control">
+                                                    <option value="0" selected>All Snippets</option>
+                                                    <option value="1">Featured</option>
+                                                    <option value="2">Most popular</option>
+                                                    <option value="3">Top rated</option>
+                                                    <option value="4">Most commented</option>
+                                                </select>
+                                              </div>
+                                              <div class="form-group">
+                                                <label for="contain">Author</label>
+                                                <input class="form-control" type="text" />
+                                              </div>
+                                              <div class="form-group">
+                                                <label for="contain">Contains the words</label>
+                                                <input class="form-control" type="text" />
+                                              </div>
+                                              <button type="submit" class="btn btn-primary"><i class="fas fa-search text-grey" aria-hidden="true"></i></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary"><i class="fas fa-search text-grey" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
                         </div>
-                    </nav>
 
                     </div> 
                 </div>
